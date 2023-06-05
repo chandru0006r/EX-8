@@ -4,7 +4,7 @@
 
 # EXP: 8
 
-# DATE:26-04-2023
+# DATE:27-04-2023
 
 # AIM:
 To write a python program for creating Echo Client and Echo Server using TCP
@@ -16,8 +16,9 @@ Sockets Links.
 3. Send message to the client and receive the message from the client using the Socket module in
 server.
 4. Send and receive the message using the send function in socket.
+
 # PROGRAM:
-# CLIENT:
+## CLIENT:
 ```python3
 import socket
 s=socket.socket()
@@ -27,7 +28,7 @@ while True:
    s.send(msg.encode())
    print("Server > ",s.recv(1024).decode())
   ```
-# SERVER:
+## SERVER:
 ```python3
 import socket
 s=socket.socket()
